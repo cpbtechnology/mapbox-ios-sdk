@@ -129,9 +129,9 @@
 
 - (void)addAnnotation:(RMAnnotation *)annotation
 {
-    annotation.layer = [[RMMarker alloc] initWithMapboxMarkerImage:[annotation.userInfo objectForKey:@"marker-symbol"]
-                                                      tintColorHex:[annotation.userInfo objectForKey:@"marker-color"]
-                                                        sizeString:[annotation.userInfo objectForKey:@"marker-size"]];
+    // annotation.layer = [[RMMarker alloc] initWithMapboxMarkerImage:[annotation.userInfo objectForKey:@"marker-symbol"]
+    //                                                   tintColorHex:[annotation.userInfo objectForKey:@"marker-color"]
+    //                                                     sizeString:[annotation.userInfo objectForKey:@"marker-size"]];
 
     [super addAnnotation:annotation];
 }
